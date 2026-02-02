@@ -62,11 +62,11 @@ document.addEventListener("keydown", (e) => {
 
      if (e.key === " ") {
 
-          // reprise → compte à rebours
+          // Game countdown
           if (game.isGamePause && !game.isGameOver) {
                startCountdown();
           }
-          // jeu en cours → pause
+          // Game is pause
           else if (!game.isGamePause) {
                game.isGamePause = true;
           }
